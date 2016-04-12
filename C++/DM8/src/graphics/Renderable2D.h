@@ -48,8 +48,8 @@ namespace DM8 {
 
 			void SetUVDefaults()
 			{
-				m_UV.push_back(math::Vec2(0, 0));
 				m_UV.push_back(math::Vec2(0, 1));
+				m_UV.push_back(math::Vec2(0, 0));
 				m_UV.push_back(math::Vec2(1, 1));
 				m_UV.push_back(math::Vec2(1, 0));
 			}

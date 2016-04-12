@@ -24,6 +24,7 @@ namespace DM8 {
 			{
 				renderable->Submit(m_Renderer);
 			}
+
 			m_Renderer->Pop();
 			m_Renderer->End();
 			m_Renderer->Flush();

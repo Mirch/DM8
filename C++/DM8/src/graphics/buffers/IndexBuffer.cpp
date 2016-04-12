@@ -3,7 +3,7 @@
 namespace DM8 {
 	namespace graphics {
 
-		IndexBuffer::IndexBuffer(unsigned short* data, unsigned int count) : 
+		IndexBuffer::IndexBuffer(unsigned int* data, unsigned int count) : 
 			m_Count(count)
 		{
 			glGenBuffers(1, &m_ID);

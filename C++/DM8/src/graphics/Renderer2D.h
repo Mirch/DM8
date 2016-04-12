@@ -32,6 +32,7 @@ namespace DM8 {
 				else
 					m_TransformationStack.push_back(m_TransformationStack.back().Multiply(matrix));
 
+				*m_TransfBack = m_TransformationStack.back();
 			}
 
 			void Pop()

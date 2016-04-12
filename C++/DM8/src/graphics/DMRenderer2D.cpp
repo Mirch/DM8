@@ -6,6 +6,7 @@ namespace DM8 {
 	namespace graphics {
 
 		DMRenderer2D::DMRenderer2D()
+			: Renderer2D(), m_IndexCount(0)
 		{
 			Init();
 		}
@@ -37,16 +38,15 @@ namespace DM8 {
 			glVertexAttribPointer(SHADER_COLOR_INDEX, 4, GL_UNSIGNED_BYTE, GL_TRUE, VERTEX_SIZE, (const GLvoid*)offsetof(VertexData, VertexData::m_Color));
 
 
-
-
 			glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-			GLushort indices[INDICES_SIZE];
+			GLuint* indices = new GLuint[INDICES_SIZE];
+
 
 			int offset = 0;
 			for (int i = 0; i < INDICES_SIZE; i += 6)
 			{
-				indices[i] = offset;
+				indices[i] = offset + 0;
 				indices[i + 1] = offset + 1;
 				indices[i + 2] = offset + 2;
 
@@ -57,7 +57,11 @@ namespace DM8 {
 				offset += 4;
 			}
 
+			printf("%d\n", INDICES_SIZE);
+
 			m_Ibo = new IndexBuffer(indices, INDICES_SIZE);
+
+			delete indices;
 
 			glBindVertexArray(0);
 		}
@@ -103,7 +107,7 @@ namespace DM8 {
 						Begin();
 					}
 					m_TextureSlots.push_back(tid);
-					ts = (float)m_TextureSlots.size();
+					ts = (float)m_TextureSlots.size()-1;
 				}
 
 			}
@@ -161,7 +165,7 @@ namespace DM8 {
 			
 			glBindVertexArray(m_Vao);
 			m_Ibo->Bind();
-			glDrawElements(GL_TRIANGLES, m_IndexCount, GL_UNSIGNED_SHORT, NULL);
+			glDrawElements(GL_TRIANGLES, m_IndexCount, GL_UNSIGNED_INT, NULL);
 			m_Ibo->Unbind();
 			glBindVertexArray(0);
 			m_IndexCount = 0;

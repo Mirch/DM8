@@ -12,7 +12,7 @@ namespace DM8 {
 			GLuint m_ID;
 			unsigned int m_Count;
 		public:
-			IndexBuffer(unsigned short* data, unsigned int count);
+			IndexBuffer(unsigned int* data, unsigned int count);
 
 			void Bind() const;
 			void Unbind() const;
