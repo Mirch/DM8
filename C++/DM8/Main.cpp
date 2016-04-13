@@ -1,21 +1,8 @@
 #include <iostream>
-#include <gl/glew.h>
-#include <glfw/glfw3.h>
-
-#include "src/math/DMmath.h"
-#include "src/graphics/Window.h"
-
-#include "src/graphics/DMRenderer2D.h"
-#include "src/graphics/Sprite.h"
-#include "src/graphics/Shader.h"
-
-#include "src/graphics/layers/Layer.h"
-#include "src/graphics/layers/Layer2D.h"
-
+#include "DM8.h"
 
 
 #include <time.h>
-
 
 int main() {
 	
