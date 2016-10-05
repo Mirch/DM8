@@ -1,0 +1,38 @@
+﻿Build started 29.09.2016 22:05:43.
+     1>Project "C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DM8-CLI\DM8-CLI.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\mscorlib.dll" /analyze- /errorReport:prompt /clr:nostdlib Main.cpp Vec2.cpp
+         Main.cpp
+         Vec2.cpp
+         Generating Code...
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8-cli\vec2.h(18): warning C4717: 'DM8CLI::math::Vec2::x::get': recursive on all control paths, function will cause runtime stack overflow
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8-cli\vec2.h(23): warning C4717: 'DM8CLI::math::Vec2::x::set': recursive on all control paths, function will cause runtime stack overflow
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8-cli\vec2.h(32): warning C4717: 'DM8CLI::math::Vec2::y::get': recursive on all control paths, function will cause runtime stack overflow
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8-cli\vec2.h(37): warning C4717: 'DM8CLI::math::Vec2::y::set': recursive on all control paths, function will cause runtime stack overflow
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fp"Debug\DM8-CLI.pch" /Fa"Debug\\" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /analyze- /errorReport:prompt "C:\Users\Vaio\AppData\Local\Temp\.NETFramework,Version=v4.6.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.6.AssemblyAttributes.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Debug\DM8-CLI.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Debug\DM8-CLI.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\Main.obj
+         Debug\Vec2.obj
+         "Debug\.NETFramework,Version=v4.6.AssemblyAttributes.obj"
+     1>Vec2.obj : error LNK2020: unresolved token (06000005) DM8CLI.math.Vec2::.ctor
+     1>Vec2.obj : error LNK2020: unresolved token (06000007) DM8CLI.math.Vec2::Add
+     1>Vec2.obj : error LNK2020: unresolved token (06000008) DM8CLI.math.Vec2::Subtract
+     1>Vec2.obj : error LNK2020: unresolved token (06000009) DM8CLI.math.Vec2::Multiply
+     1>Vec2.obj : error LNK2020: unresolved token (0600000A) DM8CLI.math.Vec2::Divide
+     1>Vec2.obj : error LNK2020: unresolved token (0600000B) DM8CLI.math.Vec2::op_Subtraction
+     1>Vec2.obj : error LNK2020: unresolved token (0600000C) DM8CLI.math.Vec2::op_Multiply
+     1>Vec2.obj : error LNK2020: unresolved token (0600000D) DM8CLI.math.Vec2::op_Addition
+     1>Vec2.obj : error LNK2020: unresolved token (0600000E) DM8CLI.math.Vec2::op_Division
+     1>Vec2.obj : error LNK2020: unresolved token (0600000F) DM8CLI.math.Vec2::op_Equality
+     1>Vec2.obj : error LNK2020: unresolved token (06000010) DM8CLI.math.Vec2::op_Inequality
+     1>Vec2.obj : error LNK2020: unresolved token (06000011) DM8CLI.math.Vec2::op_AdditionAssignment
+     1>Vec2.obj : error LNK2020: unresolved token (06000012) DM8CLI.math.Vec2::op_SubtractionAssignment
+     1>Vec2.obj : error LNK2020: unresolved token (06000013) DM8CLI.math.Vec2::op_MultiplicationAssignment
+     1>Vec2.obj : error LNK2020: unresolved token (06000014) DM8CLI.math.Vec2::op_DivisionAssignment
+     1>C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Debug\DM8-CLI.exe : fatal error LNK1120: 15 unresolved externals
+     1>Done Building Project "C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DM8-CLI\DM8-CLI.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.65
