@@ -11,11 +11,15 @@ namespace DM8CLI {
 
 		Layer::Layer(Renderer2D^ renderer, Shader^ shader, math::Mat4^ projectionMatrix)
 		{
-			DM8::math::Mat4 matrix = const_cast<const DM8::math::Mat4&>(*projectionMatrix->GetHandle());
+			// hard coded
+			//DM8::math::Mat4 matrix = DM8::math::Mat4::Ortho(0.0f, 16.0f, 0.0f, 9.0f, -1.0f, 1.0f);
 			DM8::graphics::Renderer2D* pRenderer = renderer->GetHandle();
 			DM8::graphics::Shader* pShader = shader->GetHandle();
+			std::cout << "cur" << std::endl;
+			DM8::math::Mat4* matrixTest = projectionMatrix->GetHandle();
 
-			m_Instance = new DM8::graphics::Layer(pRenderer, pShader, matrix);
+
+			m_Instance = new DM8::graphics::Layer(pRenderer, pShader, *matrixTest);
 		}
 
 		void Layer::Push(Renderable2D^ renderable)

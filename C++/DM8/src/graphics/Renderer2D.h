@@ -44,7 +44,9 @@ namespace DM8 {
 			virtual void Begin() {}
 			virtual void End() {}
 
-			virtual void Submit(const Renderable2D* renderable) {}
+			virtual void Submit(const Renderable2D* renderable) {
+				
+			}
 
 			virtual void Flush() {}
 		};

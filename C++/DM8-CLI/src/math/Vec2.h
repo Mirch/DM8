@@ -11,6 +11,30 @@ namespace DM8CLI
 		{
 		public:
 
+			property float x
+			{
+				float get()
+				{
+					return m_Instance->x;
+				}
+				void set(float value)
+				{
+					m_Instance->x = value;
+				}
+			}
+
+			property float y
+			{
+				float get()
+				{
+					return m_Instance->y;
+				}
+				void set(float value)
+				{
+					m_Instance->y = value;
+				}
+			}
+
 			Vec2();
 			Vec2(DM8::math::Vec2* instance);
 			Vec2(float x, float y);

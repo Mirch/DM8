@@ -1,5 +1,7 @@
 #pragma once
 
+
+
 #include "src/graphics/buffers/Buffer.h"
 #include "src/graphics/buffers/IndexBuffer.h"
 #include "src/graphics/buffers/VertexArray.h"
@@ -20,6 +22,9 @@
 
 #include "src/utils/FileUtils.h"
 #include "src/utils/maths_func.h"
+
+#include "src/entity/Entity.h"
+#include "src/entity/component/Components.h"
 
 
 

@@ -1,31 +1,20 @@
-﻿Build started 04.10.2016 15:21:15.
+﻿Build started 08.03.2017 16:20:15.
      1>Project "C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DM8-CLI\DM8-CLI.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\Vaio\Documents\game libraries\glew-1.13.0\include\GL" /I"C:\Users\Vaio\Documents\game libraries\glfw-3.1.2.bin.WIN32\include\GLFW" /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DM8\src /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\FreeType\include\freetype2 /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\FreeImage\include /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\GLFW\include /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\GLEW\include /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\um" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\shared" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\winrt" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\um" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\shared" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\winrt" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\Facades\\" /Zi /clr /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy- /GT /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /D WIN32 /D NDEBUG /EHa /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\mscorlib.dll" /analyze- /errorReport:prompt /clr:nostdlib Main.cpp src\graphics\Shader.cpp src\graphics\layers\Layer.cpp src\graphics\layers\Layer2D.cpp
-         Main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DM8\src /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\FreeType\include\freetype2 /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\FreeImage\include /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\GLFW\include /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\GLEW\include /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\um" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\shared" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\winrt" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\um" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\shared" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\winrt" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\Facades\\" /Zi /clr /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy- /GT /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _UNICODE /D UNICODE /D WIN32 /D NDEBUG /EHa /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\mscorlib.dll" /analyze- /errorReport:prompt /clr:nostdlib src\entity\Entity.cpp
+         Entity.cpp
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\../utils/maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src/graphics/layers/Layer.h(22): warning C4018: '<': signed/unsigned mismatch
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src/graphics/Window.h(37): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8-cli\src\graphics\../DMManagedObject.h(11): warning C4477: 'sprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'System::String ^'
-     1>Main.cpp(49): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-         Shader.cpp
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\../utils/maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src/graphics/layers/Layer.h(22): warning C4018: '<': signed/unsigned mismatch
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src/graphics/Window.h(37): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8-cli\src\graphics\../DMManagedObject.h(11): warning C4477: 'sprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'System::String ^'
-         Layer.cpp
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\../utils/maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src/graphics/layers/Layer.h(22): warning C4018: '<': signed/unsigned mismatch
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src/graphics/Window.h(37): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8-cli\src\graphics\layers\../../DMManagedObject.h(11): warning C4477: 'sprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'System::String ^'
-         Layer2D.cpp
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\../utils/maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src/graphics/layers/Layer.h(22): warning C4018: '<': signed/unsigned mismatch
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src/graphics/Window.h(37): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8-cli\src\graphics\layers\../../DMManagedObject.h(11): warning C4477: 'sprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'System::String ^'
-         Generating Code...
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8-cli\src\entity\../DMManagedObject.h(11): warning C4477: 'sprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'System::String ^'
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DM8\src /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\FreeType\include\freetype2 /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\FreeImage\include /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\GLFW\include /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\GLEW\include /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\um" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\shared" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\winrt" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\um" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\shared" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\winrt" /Zi /clr /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy- /GT /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _UNICODE /D UNICODE /D WIN32 /D NDEBUG /EHa /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fp"Release\DM8-CLI.pch" /Fa"Release\\" /Fo"Release\\" /Fd"Release\vc140.pdb" /analyze- /errorReport:prompt "C:\Users\Vaio\AppData\Local\Temp\.NETFramework,Version=v4.6.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.6.AssemblyAttributes.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\DM8-CLI.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\dependencies\FreeImage\lib /LIBPATH:C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\dependencies\FreeType\lib /LIBPATH:C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\dependencies\GLEW\lib /LIBPATH:"C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\dependencies\GLFW\lib-vc2015" glfw3.lib opengl32.lib glew32s.lib FreeImage.lib freetype.lib DM8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\DM8-CLI.pdb" /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /SAFESEH Release\Main.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\DM8-CLI.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\dependencies\FreeImage\lib /LIBPATH:C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\dependencies\FreeType\lib /LIBPATH:C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\dependencies\GLEW\lib /LIBPATH:"C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\dependencies\GLFW\lib-vc2015" glfw3.lib opengl32.lib glew32s.lib FreeImage.lib DM8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\DM8-CLI.pdb" /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /SAFESEH /DLL Release\Main.obj
+         Release\Component.obj
+         Release\SpriteComponent.obj
+         Release\TransformComponent.obj
+         Release\Entity.obj
          Release\IndexBuffer.obj
          Release\MBuffer.obj
          Release\DMRenderer2D.obj
@@ -42,33 +31,32 @@
          Release\Vec4.obj
          Release\VertexArray.obj
          "Release\.NETFramework,Version=v4.6.AssemblyAttributes.obj"
-         C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\DM8.lib
          DM8.lib(Window.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
-     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>MSVCRT.lib(initializers.obj) : warning LNK4098: defaultlib 'libcmt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
          Generating code
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\renderable2d.h(63): warning C4172: returning address of local variable or temporary
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec4.cpp(115): warning C4172: returning address of local variable or temporary
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec4.cpp(110): warning C4172: returning address of local variable or temporary
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec4.cpp(105): warning C4172: returning address of local variable or temporary
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec2.cpp(103): warning C4172: returning address of local variable or temporary
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec2.cpp(98): warning C4172: returning address of local variable or temporary
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec2.cpp(93): warning C4172: returning address of local variable or temporary
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec4.cpp(100): warning C4172: returning address of local variable or temporary
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec2.cpp(88): warning C4172: returning address of local variable or temporary
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec3.cpp(109): warning C4172: returning address of local variable or temporary
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec3.cpp(104): warning C4172: returning address of local variable or temporary
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec3.cpp(99): warning C4172: returning address of local variable or temporary
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec3.cpp(94): warning C4172: returning address of local variable or temporary
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\mat4.cpp(80): warning C4172: returning address of local variable or temporary: result
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\mat4.cpp(109): warning C4172: returning address of local variable or temporary: result
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\mat4.cpp(79): warning C4172: returning address of local variable or temporary: result
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec4.cpp(110): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec4.cpp(100): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\mat4.cpp(108): warning C4172: returning address of local variable or temporary: result
      1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\window.cpp(59): warning C4715: 'DM8::graphics::Window::Init': not all control paths return a value
          Finished generating code
      1>Window.obj : warning LNK4248: unresolved typeref token (01000018) for 'GLFWwindow'; image may not run
      1>Main.obj : warning LNK4248: unresolved typeref token (01000019) for 'GLFWwindow'; image may not run
      1>glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\vc120.pdb'; linking object as if no debug info
-         DM8-CLI.vcxproj -> C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\DM8-CLI.exe
+         DM8-CLI.vcxproj -> C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\DM8-CLI.dll
      1>Done Building Project "C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DM8-CLI\DM8-CLI.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:10.10
+Time Elapsed 00:00:07.16

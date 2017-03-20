@@ -6,7 +6,7 @@
 namespace DM8 {
 	namespace graphics {
 
-		class Group
+		class Group 
 		{
 		private:
 			std::vector<Renderable2D*> m_Renderables;

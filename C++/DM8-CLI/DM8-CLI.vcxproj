@@ -34,7 +34,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CLRSupport>true</CLRSupport>
@@ -113,7 +113,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions);WIN32;NDEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Vaio\Documents\game libraries\glew-1.13.0\include\GL;C:\Users\Vaio\Documents\game libraries\glfw-3.1.2.bin.WIN32\include\GLFW;$(IncludePath)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(IncludePath)</AdditionalIncludeDirectories>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <FloatingPointModel>Fast</FloatingPointModel>
@@ -124,7 +124,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;FreeImage.lib;freetype.lib;DM8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;FreeImage.lib;DM8.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\dependencies\FreeImage\lib;C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\dependencies\FreeType\lib;C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\dependencies\GLEW\lib;C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\dependencies\GLFW\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -140,6 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="src\entity\component\Component.cpp" />
+    <ClCompile Include="src\entity\component\SpriteComponent.cpp" />
+    <ClCompile Include="src\entity\component\TransformComponent.cpp" />
+    <ClCompile Include="src\entity\Entity.cpp" />
     <ClCompile Include="src\graphics\buffers\IndexBuffer.cpp" />
     <ClCompile Include="src\graphics\buffers\MBuffer.cpp" />
     <ClCompile Include="src\graphics\DMRenderer2D.cpp" />
@@ -157,6 +161,10 @@
     <ClCompile Include="src\graphics\buffers\VertexArray.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\entity\component\Component.h" />
+    <ClInclude Include="src\entity\component\SpriteComponent.h" />
+    <ClInclude Include="src\entity\component\TransformComponent.h" />
+    <ClInclude Include="src\entity\Entity.h" />
     <ClInclude Include="src\graphics\buffers\IndexBuffer.h" />
     <ClInclude Include="src\graphics\buffers\MBuffer.h" />
     <ClInclude Include="src\DMManagedObject.h" />
@@ -186,11 +194,6 @@
   <ItemGroup>
     <None Include="shaders\shader.frag" />
     <None Include="shaders\shader.vert" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DM8\DM8.vcxproj">
-      <Project>{cef25e6c-2bf2-40fc-a09a-2d9cf98fb4cc}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

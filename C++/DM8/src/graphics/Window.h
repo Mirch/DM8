@@ -39,8 +39,8 @@ namespace DM8 {
 			static bool IsKeyPressed(unsigned int keycode);
 			static bool IsButtonPressed(unsigned int button);
 
-			inline const double& getMouseX() { return mx; };
 			inline const double& getMouseY() { return my; };
+			inline const double& getMouseX() { return mx; };
 
 			friend static void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
 			friend static void CursorPositionCallback(GLFWwindow* window, double xpos, double ypos);

@@ -10,6 +10,8 @@ namespace DM8 {
 		public:
 			float x, y, z, w;
 		public:
+
+
 			Vec4();
 			Vec4(float x, float y, float z, float w);
 

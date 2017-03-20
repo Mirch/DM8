@@ -1,8 +1,8 @@
 #pragma once
 
-#include "../Renderer2D.h"
 #include "../Shader.h"
 #include "../Renderable2D.h"
+#include "../scene/Scene.h"
 
 namespace DM8 {
 	namespace graphics {
@@ -13,9 +13,8 @@ namespace DM8 {
 			Renderer2D* m_Renderer;
 			std::vector<Renderable2D*> m_Renderables;
 			Shader* m_Shader;
-			math::Mat4 m_ProjectionMatrix;
 		public:
-			Layer(Renderer2D* renderer, Shader* shader,const math::Mat4& projectionMatrix);
+			Layer(Shader* shader, scene::Scene* scene);
 		
 			virtual ~Layer()
 			{
@@ -25,8 +24,7 @@ namespace DM8 {
 				}
 			}
 			
-			void Push(Renderable2D* renderable);
-			void Render();
+			virtual void Render() = 0;
 		};
 
 	}

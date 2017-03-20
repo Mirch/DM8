@@ -20,7 +20,7 @@ namespace DM8 {
 
 		class Renderable2D
 		{
-		protected:
+		public:
 			math::Vec2 m_Size;
 			math::Vec3 m_Position;
 			math::Vec4 m_Color;
@@ -61,6 +61,7 @@ namespace DM8 {
 			inline const math::Vec3& GetPosition() const { return m_Position; };
 			inline const math::Vec4& GetColor() const { return m_Color; };
 			inline const float& GetTID() const { return (float)(m_Texture->GetTID()); };
+			inline bool IsTextured() const { return m_Texture != nullptr ? true : false; };
 
 		};
 

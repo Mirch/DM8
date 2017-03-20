@@ -5,22 +5,62 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DM8", "DM8\DM8.vcxproj", "{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DM8-CLI", "DM8-CLI\DM8-CLI.vcxproj", "{23D3C80E-4947-4EB2-8817-8A740DFDF61A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{A732180A-54E6-4B97-B5AB-71227CC1955C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Tegra-Android = Debug|Tegra-Android
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Tegra-Android = Release|Tegra-Android
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Debug|Tegra-Android.ActiveCfg = Debug|Tegra-Android
+		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Debug|Tegra-Android.Build.0 = Debug|Tegra-Android
 		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Debug|x64.ActiveCfg = Debug|x64
 		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Debug|x64.Build.0 = Debug|x64
 		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Debug|x86.ActiveCfg = Debug|Win32
 		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Debug|x86.Build.0 = Debug|Win32
+		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Release|Any CPU.ActiveCfg = Release|Win32
+		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Release|Any CPU.Build.0 = Release|Win32
+		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Release|Tegra-Android.ActiveCfg = Release|Tegra-Android
+		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Release|Tegra-Android.Build.0 = Release|Tegra-Android
 		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Release|x64.ActiveCfg = Release|x64
 		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Release|x64.Build.0 = Release|x64
 		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Release|x86.ActiveCfg = Release|Win32
 		{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}.Release|x86.Build.0 = Release|Win32
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Debug|Tegra-Android.ActiveCfg = Debug|Win32
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Debug|x64.ActiveCfg = Debug|x64
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Debug|x64.Build.0 = Debug|x64
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Debug|x86.ActiveCfg = Debug|Win32
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Debug|x86.Build.0 = Debug|Win32
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Release|Any CPU.Build.0 = Release|Win32
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Release|Tegra-Android.ActiveCfg = Release|Win32
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Release|x64.ActiveCfg = Release|x64
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Release|x64.Build.0 = Release|x64
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Release|x86.ActiveCfg = Release|Win32
+		{23D3C80E-4947-4EB2-8817-8A740DFDF61A}.Release|x86.Build.0 = Release|Win32
+		{A732180A-54E6-4B97-B5AB-71227CC1955C}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{A732180A-54E6-4B97-B5AB-71227CC1955C}.Debug|Tegra-Android.ActiveCfg = Debug|Win32
+		{A732180A-54E6-4B97-B5AB-71227CC1955C}.Debug|x64.ActiveCfg = Debug|x64
+		{A732180A-54E6-4B97-B5AB-71227CC1955C}.Debug|x64.Build.0 = Debug|x64
+		{A732180A-54E6-4B97-B5AB-71227CC1955C}.Debug|x86.ActiveCfg = Debug|Win32
+		{A732180A-54E6-4B97-B5AB-71227CC1955C}.Debug|x86.Build.0 = Debug|Win32
+		{A732180A-54E6-4B97-B5AB-71227CC1955C}.Release|Any CPU.ActiveCfg = Release|Win32
+		{A732180A-54E6-4B97-B5AB-71227CC1955C}.Release|Tegra-Android.ActiveCfg = Release|Win32
+		{A732180A-54E6-4B97-B5AB-71227CC1955C}.Release|x64.ActiveCfg = Release|x64
+		{A732180A-54E6-4B97-B5AB-71227CC1955C}.Release|x64.Build.0 = Release|x64
+		{A732180A-54E6-4B97-B5AB-71227CC1955C}.Release|x86.ActiveCfg = Release|Win32
+		{A732180A-54E6-4B97-B5AB-71227CC1955C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

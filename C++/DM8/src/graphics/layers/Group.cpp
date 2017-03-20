@@ -5,7 +5,7 @@ namespace DM8 {
 	namespace graphics {
 			
 		Group::Group(const math::Mat4& transform)
-			:m_TransformationMatrix(transform)
+			: m_TransformationMatrix(transform)
 		{
 
 		}

@@ -34,7 +34,7 @@ namespace DM8 {
 			}
 
 
-			glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
+			//glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 			m_ID = glfwCreateWindow(m_Width, m_Height, m_Title, NULL, NULL);
 			if (!m_ID)
 			{

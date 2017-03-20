@@ -33,7 +33,6 @@ namespace DM8 {
 			result.elements[0 + 3 * 4] = (left + right) / (left - right);
 			result.elements[1 + 3 * 4] = (bottom + top) / (bottom - top);
 			result.elements[2 + 3 * 4] = (far + near) / (far - near);
-
 			return result;
 		}
 

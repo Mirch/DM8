@@ -16,5 +16,18 @@ namespace DM8 {
 
 		}
 
+		Sprite::Sprite(const math::Vec2& size, Texture* texture) :
+			Renderable2D(math::Vec3(0.0f, 0.0f, 0.0f), size, texture)
+		{
+
+		}
+
+		Sprite::Sprite(const math::Vec2& size, math::Vec4 color) :
+			Renderable2D(math::Vec3(0.0f, 0.0f, 0.0f), size, color)
+		{
+
+		}
+
+
 	}
 }

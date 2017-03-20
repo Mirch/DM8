@@ -57,8 +57,6 @@ namespace DM8 {
 				offset += 4;
 			}
 
-			printf("%d\n", INDICES_SIZE);
-
 			m_Ibo = new IndexBuffer(indices, INDICES_SIZE);
 
 			delete indices;
@@ -79,8 +77,10 @@ namespace DM8 {
 			const math::Vec4& color = sprite->GetColor();
 			const std::vector<math::Vec2>& uv = sprite->GetUV();
 
+			float tid = 0;
 
-			float tid = sprite->GetTID();
+			if(sprite->IsTextured())
+				tid = sprite->GetTID();
 
 			int c = 0;
 			float ts = 0.0f;

@@ -10,7 +10,8 @@ namespace DM8 {
 		public:
 			Sprite(const math::Vec3& position, const math::Vec2& size, Texture* texture);
 			Sprite(const math::Vec3& position, const math::Vec2& size, math::Vec4 color);
-
+			Sprite(const math::Vec2& size, Texture* texture);
+			Sprite(const math::Vec2& size, math::Vec4 color);
 		};
 
 	}

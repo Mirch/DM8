@@ -34,7 +34,6 @@ namespace DM8CLI
 			if (m_Instance != nullptr)
 			{
 				delete m_Instance;
-				m_Instance = nullptr;
 			}
 		}
 
@@ -43,7 +42,6 @@ namespace DM8CLI
 			if (m_Instance != nullptr)
 			{
 				delete m_Instance;
-				m_Instance = nullptr;
 			}
 		}
 

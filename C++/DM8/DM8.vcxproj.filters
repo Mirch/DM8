@@ -49,7 +49,28 @@
     <ClCompile Include="src\graphics\buffers\VertexArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="src\entity\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\component\Component.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\component\SpriteComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\component\TransformComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\scene\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\camera\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\layers\Layer2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -75,6 +96,14 @@
     <ClInclude Include="src\graphics\layers\Layer.h" />
     <ClInclude Include="src\graphics\layers\Layer2D.h" />
     <ClInclude Include="DM8.h" />
+    <ClInclude Include="src\entity\Entity.h" />
+    <ClInclude Include="src\entity\component\Component.h" />
+    <ClInclude Include="src\entity\component\SpriteComponent.h" />
+    <ClInclude Include="src\entity\component\TransformComponent.h" />
+    <ClInclude Include="src\entity\component\Components.h" />
+    <ClInclude Include="src\game\Game.h" />
+    <ClInclude Include="src\graphics\scene\Scene.h" />
+    <ClInclude Include="src\graphics\camera\Camera.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\shader.frag" />

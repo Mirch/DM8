@@ -21,7 +21,7 @@ namespace DM8 {
 			fread(data, 1, length, file);
 			fclose(file);
 			std::string result(data);
-		
+
 			delete[] data;
 			return result;
 		}
