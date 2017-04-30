@@ -1,0 +1,363 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly DM8-CLI, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class DM8CLI.DMManagedObject<DM8::graphics::Window>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.graphics.Window*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DM8CLI.graphics.Window: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::graphics::Window>
+    Void .ctor(System.String, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Init(): PrivateScope, Public, HideBySig
+    Update(): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    IsClosed(): PrivateScope, Public, HideBySig
+    IsKeyPressed(UInt32): PrivateScope, Public, Static, HideBySig
+    IsButtonPressed(UInt32): PrivateScope, Public, Static, HideBySig
+    GetMouseX(): PrivateScope, Public, HideBySig
+    GetMouseY(): PrivateScope, Public, HideBySig
+Class DM8CLI.DMManagedObject<DM8::math::Vec2>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.math.Vec2*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    GetHandle(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DM8CLI.math.Vec2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::math::Vec2>
+    Void .ctor(Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(DM8.math.Vec2*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single y   'get set' : 
+    Single x   'get set' : 
+  Methods:
+    get_x(): PrivateScope, Public, HideBySig, SpecialName
+    set_x(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_y(): PrivateScope, Public, HideBySig, SpecialName
+    set_y(Single): PrivateScope, Public, HideBySig, SpecialName
+    Add(Vec2): PrivateScope, Public, HideBySig
+    Subtract(Vec2): PrivateScope, Public, HideBySig
+    Multiply(Vec2): PrivateScope, Public, HideBySig
+    Divide(Vec2): PrivateScope, Public, HideBySig
+    op_Addition(Vec2, Vec2): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Vec2, Vec2): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vec2, Vec2): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Vec2, Vec2): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Vec2): PrivateScope, Public, HideBySig, SpecialName
+    op_Inequality(Vec2): PrivateScope, Public, HideBySig, SpecialName
+    op_AdditionAssignment(Vec2): PrivateScope, Public, HideBySig, SpecialName
+    op_SubtractionAssignment(Vec2): PrivateScope, Public, HideBySig, SpecialName
+    op_MultiplicationAssignment(Vec2): PrivateScope, Public, HideBySig, SpecialName
+    op_DivisionAssignment(Vec2): PrivateScope, Public, HideBySig, SpecialName
+Class DM8CLI.DMManagedObject<DM8::math::Vec3>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.math.Vec3*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    GetHandle(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DM8CLI.math.Vec3: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::math::Vec3>
+    Void .ctor(Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(DM8.math.Vec3*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single z   'get set' : 
+    Single y   'get set' : 
+    Single x   'get set' : 
+  Methods:
+    get_x(): PrivateScope, Public, HideBySig, SpecialName
+    set_x(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_y(): PrivateScope, Public, HideBySig, SpecialName
+    set_y(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_z(): PrivateScope, Public, HideBySig, SpecialName
+    set_z(Single): PrivateScope, Public, HideBySig, SpecialName
+    Add(Vec3): PrivateScope, Public, HideBySig
+    Subtract(Vec3): PrivateScope, Public, HideBySig
+    Multiply(Vec3): PrivateScope, Public, HideBySig
+    Divide(Vec3): PrivateScope, Public, HideBySig
+    op_Addition(Vec3, Vec3): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Vec3, Vec3): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vec3, Vec3): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Vec3, Vec3): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Vec3): PrivateScope, Public, HideBySig, SpecialName
+    op_Inequality(Vec3): PrivateScope, Public, HideBySig, SpecialName
+    op_AdditionAssignment(Vec3): PrivateScope, Public, HideBySig, SpecialName
+    op_SubtractionAssignment(Vec3): PrivateScope, Public, HideBySig, SpecialName
+    op_MultiplicationAssignment(Vec3): PrivateScope, Public, HideBySig, SpecialName
+    op_DivisionAssignment(Vec3): PrivateScope, Public, HideBySig, SpecialName
+Class DM8CLI.DMManagedObject<DM8::math::Vec4>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.math.Vec4*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    GetHandle(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DM8CLI.math.Vec4: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::math::Vec4>
+    Void .ctor(Single, Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(DM8.math.Vec4*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single w   'get set' : 
+    Single z   'get set' : 
+    Single y   'get set' : 
+    Single x   'get set' : 
+  Methods:
+    get_x(): PrivateScope, Public, HideBySig, SpecialName
+    set_x(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_y(): PrivateScope, Public, HideBySig, SpecialName
+    set_y(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_z(): PrivateScope, Public, HideBySig, SpecialName
+    set_z(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_w(): PrivateScope, Public, HideBySig, SpecialName
+    set_w(Single): PrivateScope, Public, HideBySig, SpecialName
+    Add(Vec4): PrivateScope, Public, HideBySig
+    Subtract(Vec4): PrivateScope, Public, HideBySig
+    Multiply(Vec4): PrivateScope, Public, HideBySig
+    Divide(Vec4): PrivateScope, Public, HideBySig
+    op_Addition(Vec4, Vec4): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Vec4, Vec4): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vec4, Vec4): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Vec4, Vec4): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Vec4): PrivateScope, Public, HideBySig, SpecialName
+    op_Inequality(Vec4): PrivateScope, Public, HideBySig, SpecialName
+    op_AdditionAssignment(Vec4): PrivateScope, Public, HideBySig, SpecialName
+    op_SubtractionAssignment(Vec4): PrivateScope, Public, HideBySig, SpecialName
+    op_MultiplicationAssignment(Vec4): PrivateScope, Public, HideBySig, SpecialName
+    op_DivisionAssignment(Vec4): PrivateScope, Public, HideBySig, SpecialName
+Class DM8CLI.DMManagedObject<DM8::graphics::Texture>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.graphics.Texture*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    GetHandle(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DM8CLI.graphics.Texture: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::graphics::Texture>
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Load(String): PrivateScope, Public, HideBySig
+    Bind(): PrivateScope, Public, HideBySig
+    Unbind(): PrivateScope, Public, HideBySig
+    GetWidth(): PrivateScope, Public, HideBySig
+    GetHeight(): PrivateScope, Public, HideBySig
+Class DM8CLI.DMManagedObject<DM8::math::Mat4>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.math.Mat4*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    GetHandle(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DM8CLI.math.Mat4: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::math::Mat4>
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Identity(): PrivateScope, Public, Static, HideBySig
+    Ortho(Single, Single, Single, Single, Single, Single): PrivateScope, Public, Static, HideBySig
+    Rotate(Single): PrivateScope, Public, Static, HideBySig
+    Translate(Vec3): PrivateScope, Public, Static, HideBySig
+    Multiply(Vec4): PrivateScope, Public, HideBySig
+    Multiply(Vec3): PrivateScope, Public, HideBySig
+    Multiply(Mat4): PrivateScope, Public, HideBySig
+    op_Multiply(Mat4, Vec4): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Mat4, Vec3): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Mat4, Mat4): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_MultiplicationAssignment(Mat4): PrivateScope, Public, HideBySig, SpecialName
+Class DM8CLI.DMManagedObject<DM8::graphics::Renderer2D>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.graphics.Renderer2D*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+    GetHandle(): PrivateScope, Public, HideBySig
+Class DM8CLI.graphics.Renderer2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::graphics::Renderer2D>
+  Methods:
+    Push(Mat4): PrivateScope, Public, HideBySig
+    Push(Mat4, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Pop(): PrivateScope, Public, HideBySig
+    Begin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    End(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Submit(Renderable2D): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Flush(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class DM8CLI.DMManagedObject<DM8::graphics::Renderable2D>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.graphics.Renderable2D*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+    GetHandle(): PrivateScope, Public, HideBySig
+Class DM8CLI.graphics.Renderable2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::graphics::Renderable2D>
+    Void .ctor(DM8CLI.math.Vec3, DM8CLI.math.Vec2, DM8CLI.graphics.Texture): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(DM8CLI.math.Vec3, DM8CLI.math.Vec2, DM8CLI.math.Vec4): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Submit(Renderer2D): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetUVDefaults(): PrivateScope, Public, HideBySig
+    GetSize(): PrivateScope, Public, HideBySig
+    GetPosition(): PrivateScope, Public, HideBySig
+    GetColor(): PrivateScope, Public, HideBySig
+    IsTextured(): PrivateScope, Public, HideBySig
+Class DM8CLI.graphics.Sprite: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.graphics.Renderable2D
+    Void .ctor(DM8CLI.math.Vec2, DM8CLI.math.Vec4): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(DM8CLI.math.Vec2, DM8CLI.graphics.Texture): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(DM8CLI.math.Vec3, DM8CLI.math.Vec2, DM8CLI.math.Vec4): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(DM8CLI.math.Vec3, DM8CLI.math.Vec2, DM8CLI.graphics.Texture): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class DM8CLI.DMManagedObject<DM8::graphics::Shader>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.graphics.Shader*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+    GetHandle(): PrivateScope, Public, HideBySig
+Class DM8CLI.graphics.Shader: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::graphics::Shader>
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    SetUniform1i(String, Int32): PrivateScope, Public, HideBySig
+    SetUniformiv(String, Int32[]): PrivateScope, Public, HideBySig
+    SetUniform1f(String, Single): PrivateScope, Public, HideBySig
+    SetUniformfv(String, Single[]): PrivateScope, Public, HideBySig
+    SetUniform2f(String, Vec2): PrivateScope, Public, HideBySig
+    SetUniform3f(String, Vec3): PrivateScope, Public, HideBySig
+    SetUniform4f(String, Vec4): PrivateScope, Public, HideBySig
+    SetUniformMat4(String, Mat4): PrivateScope, Public, HideBySig
+    Enable(): PrivateScope, Public, HideBySig
+    Disable(): PrivateScope, Public, HideBySig
+Class DM8CLI.DMManagedObject<DM8::graphics::Layer>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.graphics.Layer*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DM8CLI.graphics.Layer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::graphics::Layer>
+    Void .ctor(DM8CLI.graphics.Renderer2D, DM8CLI.graphics.Shader, DM8CLI.math.Mat4): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Push(Renderable2D): PrivateScope, Public, HideBySig
+    Render(): PrivateScope, Public, HideBySig
+Class DM8CLI.graphics.DMRenderer2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.graphics.Renderer2D
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Init(): PrivateScope, Public, HideBySig
+    Begin(): PrivateScope, Public, Virtual, HideBySig
+    End(): PrivateScope, Public, Virtual, HideBySig
+    Submit(Renderable2D): PrivateScope, Public, Virtual, HideBySig
+    Flush(): PrivateScope, Public, Virtual, HideBySig
+Class DM8CLI.graphics.Layer2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.graphics.Layer
+    Void .ctor(DM8CLI.graphics.Shader): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class DM8CLI.DMManagedObject<DM8::entity::component::Component>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.entity.component.Component*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+    GetHandle(): PrivateScope, Public, HideBySig
+Class DM8CLI.entity.component.Component: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::entity::component::Component>
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetEntity(): PrivateScope, Public, HideBySig
+    GetName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class DM8CLI.entity.component.SpriteComponent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.entity.component.Component
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetStaticName(): PrivateScope, Public, Static, HideBySig
+    GetName(): PrivateScope, Public, Virtual, HideBySig
+Class DM8CLI.entity.component.TransformComponent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.entity.component.Component
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetStaticName(): PrivateScope, Public, Static, HideBySig
+    GetName(): PrivateScope, Public, Virtual, HideBySig
+Class DM8CLI.DMManagedObject<DM8::entity::Entity>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.entity.Entity*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DM8CLI.entity.Entity: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::entity::Entity>
+    Void .ctor(DM8CLI.graphics.Sprite, DM8CLI.math.Mat4): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    AddComponent(Component): PrivateScope, Public, HideBySig
+    RemoveComponent(String): PrivateScope, Public, HideBySig
+Class DM8CLI.DMManagedObject<DM8::graphics::IndexBuffer>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.graphics.IndexBuffer*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DM8CLI.graphics.IndexBuffer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::graphics::IndexBuffer>
+    Void .ctor(UInt32[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Bind(): PrivateScope, Public, HideBySig
+    Unbind(): PrivateScope, Public, HideBySig
+    GetCount(): PrivateScope, Public, HideBySig
+Class DM8CLI.DMManagedObject<DM8::graphics::Buffer>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.graphics.Buffer*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DM8CLI.graphics.MBuffer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::graphics::Buffer>
+    Void .ctor(Single[], UInt32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Bind(): PrivateScope, Public, HideBySig
+    Unbind(): PrivateScope, Public, HideBySig
+    GetComponentCount(): PrivateScope, Public, HideBySig
+Class DM8CLI.DMManagedObject<DM8::graphics::Group>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.graphics.Group*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DM8CLI.graphics.Group: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::graphics::Group>
+    Void .ctor(DM8CLI.math.Mat4): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Push(Renderable2D): PrivateScope, Public, HideBySig
+    Submit(Renderer2D): PrivateScope, Public, HideBySig
+Class DM8CLI.DMManagedObject<DM8::graphics::VertexArray>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(DM8.graphics.VertexArray*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DM8CLI.graphics.VertexArray: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :DM8CLI.DMManagedObject<DM8::graphics::VertexArray>
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Bind(): PrivateScope, Public, HideBySig
+    Unbind(): PrivateScope, Public, HideBySig

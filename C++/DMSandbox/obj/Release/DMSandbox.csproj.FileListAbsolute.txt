@@ -1,0 +1,13 @@
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DMSandbox\bin\Release\DMSandbox.exe.config
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DMSandbox\bin\Release\DMSandbox.exe
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DMSandbox\bin\Release\DMSandbox.pdb
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DMSandbox\bin\Release\DM8-CLI.dll
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DMSandbox\bin\Release\DM8-CLI.pdb
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DMSandbox\obj\Release\DMSandbox.csprojResolveAssemblyReference.cache
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DMSandbox\obj\Release\DMSandbox.exe
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DMSandbox\obj\Release\DMSandbox.pdb
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\DMSandbox.exe.config
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\DMSandbox.exe
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\DMSandbox.pdb
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DMSandbox\obj\Release\DMSandbox.Properties.Resources.resources
+C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DMSandbox\obj\Release\DMSandbox.csproj.GenerateResource.Cache

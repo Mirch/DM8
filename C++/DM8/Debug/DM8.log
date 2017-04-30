@@ -1,0 +1,53 @@
+﻿Build started 03.10.2016 21:41:03.
+     1>Project "C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DM8\DM8.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\Vaio\Documents\game libraries\glew-1.13.0\include\GL" /I"C:\Users\Vaio\Documents\game libraries\glfw-3.1.2.bin.WIN32\include\GLFW" /I"C:\Users\Vaio\Documents\game libraries\gorilla audio\include" /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\FreeType\include\freetype2 /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\FreeImage\include /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\um" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\shared" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\winrt" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\DM8.pdb" /Gd /TP /analyze- /errorReport:prompt src\graphics\buffers\Buffer.cpp src\graphics\DMRenderer2D.cpp src\graphics\buffers\IndexBuffer.cpp src\graphics\buffers\VertexArray.cpp src\graphics\layers\Group.cpp src\graphics\layers\Layer.cpp src\graphics\Shader.cpp src\graphics\Sprite.cpp src\graphics\Texture.cpp src\graphics\Window.cpp src\math\Mat4.cpp src\math\Vec2.cpp src\math\Vec3.cpp src\math\Vec4.cpp
+         Vec4.cpp
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec4.cpp(57): warning C4552: '/': operator has no effect; expected operator with side-effect
+         Vec3.cpp
+         Vec2.cpp
+         Mat4.cpp
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\utils\maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+         Window.cpp
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\window.h(3): fatal error C1083: Cannot open include file: 'GL/glew.h': No such file or directory
+         Texture.cpp
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\texture.h(5): fatal error C1083: Cannot open include file: 'GL/glew.h': No such file or directory
+         Sprite.cpp
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\utils\maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\texture.h(5): fatal error C1083: Cannot open include file: 'GL/glew.h': No such file or directory
+         Shader.cpp
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\utils\maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\shader.h(6): fatal error C1083: Cannot open include file: 'GL/glew.h': No such file or directory
+         Layer.cpp
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\utils\maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\shader.h(6): fatal error C1083: Cannot open include file: 'GL/glew.h': No such file or directory
+         Group.cpp
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\utils\maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\texture.h(5): fatal error C1083: Cannot open include file: 'GL/glew.h': No such file or directory
+         VertexArray.cpp
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\buffers\vertexarray.h(3): fatal error C1083: Cannot open include file: 'GL/glew.h': No such file or directory
+         IndexBuffer.cpp
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\buffers\indexbuffer.h(3): fatal error C1083: Cannot open include file: 'GL/glew.h': No such file or directory
+         DMRenderer2D.cpp
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\dmrenderer2d.h(4): fatal error C1083: Cannot open include file: 'GL\glew.h': No such file or directory
+         Buffer.cpp
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\buffers\buffer.h(3): fatal error C1083: Cannot open include file: 'GL/glew.h': No such file or directory
+         Generating Code...
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\mat4.cpp(80): warning C4172: returning address of local variable or temporary: result
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec2.cpp(93): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec2.cpp(88): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec2.cpp(98): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec2.cpp(103): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec3.cpp(99): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec3.cpp(94): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec3.cpp(109): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec3.cpp(104): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec4.cpp(100): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec4.cpp(105): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec4.cpp(110): warning C4172: returning address of local variable or temporary
+     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\vec4.cpp(115): warning C4172: returning address of local variable or temporary
+     1>Done Building Project "C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DM8\DM8.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:06.91
