@@ -1,44 +1,4 @@
-﻿Build started 08.03.2017 23:14:07.
-     1>Project "C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DM8\DM8.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\Vaio\Documents\game libraries\glew-1.13.0\include\GL" /I"C:\Users\Vaio\Documents\game libraries\glfw-3.1.2.bin.WIN32\include\GLFW" /I"C:\Users\Vaio\Documents\game libraries\gorilla audio\include" /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\FreeType\include\freetype2 /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\FreeImage\include /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\GLFW\include /IC:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\\dependencies\GLEW\include /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\um" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\shared" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\winrt" /Zi /nologo /W3 /WX- /sdl /O2 /Ob2 /Oi /Ot /Oy- /GT /GL /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\DM8.pdb" /Gd /TP /analyze- /errorReport:prompt src\entity\Entity.cpp src\graphics\layers\Layer.cpp src\graphics\layers\Layer2D.cpp src\graphics\scene\Scene.cpp
-         Entity.cpp
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\../utils/maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-         Layer.cpp
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\../utils/maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\layers\Layer.h(21): warning C4018: '<': signed/unsigned mismatch
-         Layer2D.cpp
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\../utils/maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\graphics\layers\Layer.h(21): warning C4018: '<': signed/unsigned mismatch
-         Scene.cpp
-     1>c:\users\vaio\desktop\mirchs\dm\dm8\c++\dm8\src\math\../utils/maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-     1>src\graphics\scene\Scene.cpp(19): warning C4018: '<': signed/unsigned mismatch
-     1>src\graphics\scene\Scene.cpp(37): warning C4018: '<': signed/unsigned mismatch
-       Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\DM8.lib" /NOLOGO /LTCG Release\Component.obj
-         Release\SpriteComponent.obj
-         Release\TransformComponent.obj
-         Release\Entity.obj
-         Release\Buffer.obj
-         Release\Camera.obj
-         Release\DMRenderer2D.obj
-         Release\IndexBuffer.obj
-         Release\VertexArray.obj
-         Release\Group.obj
-         Release\Layer.obj
-         Release\Layer2D.obj
-         Release\Scene.obj
-         Release\Shader.obj
-         Release\Sprite.obj
-         Release\Texture.obj
-         Release\Window.obj
-         Release\Mat4.obj
-         Release\Vec2.obj
-         Release\Vec3.obj
-         Release\Vec4.obj
-         DM8.vcxproj -> C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\Release\DM8.lib
-     1>Done Building Project "C:\Users\Vaio\Desktop\Mirchs\DM\DM8\C++\DM8\DM8.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:05.34
+﻿  TransformComponent.cpp
+c:\users\mirce\documents\dm\dm8\c++\dm8\src\math\../utils/maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+src\entity\component\TransformComponent.cpp(25): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  DM8.vcxproj -> C:\Users\mirce\Documents\DM\DM8\C++\Release\DM8.lib

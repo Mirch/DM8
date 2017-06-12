@@ -19,11 +19,16 @@ namespace DM8
 		{
 			class Component
 			{
-			protected:
-				Entity* m_Entity;
 			public:
-				inline Entity* GetEntity() const { return m_Entity; }
+				Entity* EntityObject;
+			public:
+				Component(Entity* entity);
+
+				inline Entity* GetEntity() const { return EntityObject; }
 				virtual inline std::string GetName() const { return nullptr; }
+
+				virtual void Update();
+
 			};
 		}
 	}

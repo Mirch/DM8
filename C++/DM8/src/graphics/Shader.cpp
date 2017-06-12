@@ -136,5 +136,10 @@ namespace DM8 {
 			glUseProgram(0);
 		}
 
+		Shader* Shader::GetDefaultShader()
+		{
+			return new Shader("shaders/shader.vert", "shaders/shader.frag");
+		}
+
 	}
 }

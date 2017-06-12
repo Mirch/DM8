@@ -6,8 +6,8 @@ namespace DM8
 	{
 		namespace component
 		{
-			SpriteComponent::SpriteComponent(graphics::Sprite* sprite)
-				: m_Sprite(sprite)
+			SpriteComponent::SpriteComponent(graphics::Sprite* sprite, Entity* entity)
+				: m_Sprite(sprite), Component(entity)
 			{
 			}
 		}

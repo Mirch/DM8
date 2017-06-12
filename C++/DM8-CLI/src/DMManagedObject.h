@@ -1,6 +1,6 @@
 #pragma once
 
-#include <../DM8.h>
+#include "../../DM8/DM8.h"
 
 namespace DM8CLI
 {

@@ -1,20 +1,38 @@
 #include "Entity.h"
 
-
+#include "../game/scene/Scene.h"
 
 namespace DM8
 {
+	using namespace scene;
 	namespace entity
 	{
-		Entity::Entity()
+		Entity::Entity(std::string name)
+			: m_Name(name)
 		{
 
 		}
 
-		Entity::Entity(graphics::Sprite* sprite, const math::Mat4& transform)
+		Entity::Entity(std::string name, graphics::Sprite* sprite, const math::Mat4& transform)
+			: m_Name(name)
 		{
-			AddComponent(new component::SpriteComponent(sprite));
-			AddComponent(new component::TransformComponent(transform));
+			AddComponent(new component::SpriteComponent(sprite, this));
+			AddComponent(new component::TransformComponent(transform, this));
+			AddComponent(new component::CollisionBox(this));
+			Transform = GetComponent<component::TransformComponent>();
+		}
+
+		Entity::~Entity()
+		{
+			for (auto it = m_Components.begin(); it != m_Components.end(); ++it)
+			{
+				delete it->second;
+			}
+		}
+
+		void Entity::SetScene(scene::Scene* scene)
+		{
+			Scene = scene;
 		}
 
 		void Entity::AddComponent(component::Component* component)
@@ -26,10 +44,20 @@ namespace DM8
 		{
 			m_Components.erase(name);
 		}
+		
+		void Entity::Start()
+		{
+			for (auto it = m_Components.begin(); it != m_Components.end(); ++it)
+			{
+				if (dynamic_cast<component::EntityBehaviour*>(it->second) != 0)
+					dynamic_cast<component::EntityBehaviour*>(it->second)->Start();
+			}
+		}
 
 		void Entity::Update()
 		{
-
+			for (auto it = m_Components.begin(); it != m_Components.end(); ++it)
+				it->second->Update();
 		}
 
 	}

@@ -1,0 +1,3 @@
+﻿  CollisionBox.cpp
+c:\users\mirce\documents\dm\dm8\c++\dm8\src\math\../utils/maths_func.h(10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  DM8.vcxproj -> C:\Users\mirce\Documents\DM\DM8\C++\Release\DM8.lib

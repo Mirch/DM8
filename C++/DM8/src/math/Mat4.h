@@ -25,6 +25,7 @@ namespace DM8 {
 
 			static Mat4 Ortho(float left, float right, float bottom, float top, float near, float far);
 			static Mat4 Rotate(float angle);
+			static Mat4 RotateAround(float angle, Vec3 point);
 			static Mat4 Translate(const Vec3& vector);
 
 			Mat4& Multiply(const Mat4& other);

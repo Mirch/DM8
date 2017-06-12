@@ -97,22 +97,22 @@ namespace DM8 {
 
 		Vec4& Vec4::operator+=(const Vec4& other)
 		{
-			return *this + other;
+			return Add(other);
 		}
 
 		Vec4& Vec4::operator-=(const Vec4& other)
 		{
-			return *this - other;
+			return Subtract(other);
 		}
 
 		Vec4& Vec4::operator*=(const Vec4& other)
 		{
-			return *this * other;
+			return Multiply(other);
 		}
 
 		Vec4& Vec4::operator/=(const Vec4& other)
 		{
-			return *this / other;
+			return Divide(other);
 		}
 
 		std::ostream& operator<<(std::ostream& stream, const Vec4& vector)

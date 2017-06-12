@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="NsightTegraProject">
     <NsightTegraProjectRevisionNumber>11</NsightTegraProjectRevisionNumber>
   </PropertyGroup>
@@ -32,19 +32,19 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{CEF25E6C-2BF2-40FC-A09A-2D9CF98FB4CC}</ProjectGuid>
     <RootNamespace>DM8</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
     <AndroidBuildSystem>GradleBuild</AndroidBuildSystem>
     <AndroidTargetAPI>android-19</AndroidTargetAPI>
@@ -55,14 +55,14 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
     <AndroidBuildSystem>GradleBuild</AndroidBuildSystem>
@@ -74,13 +74,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -228,11 +228,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\entity\component\physics\CollisionBox.cpp" />
+    <ClCompile Include="src\entity\component\physics\Rigidbody2D.cpp" />
+    <ClCompile Include="src\math\Rectangle.cpp" />
     <ClCompile Include="src\entity\component\Component.cpp" />
+    <ClCompile Include="src\entity\component\EntityBehaviour.cpp" />
     <ClCompile Include="src\entity\component\SpriteComponent.cpp" />
     <ClCompile Include="src\entity\component\TransformComponent.cpp" />
     <ClCompile Include="src\entity\Entity.cpp" />
     <ClCompile Include="src\game\Game.cpp" />
+    <ClCompile Include="src\game\Input.cpp" />
     <ClCompile Include="src\graphics\buffers\Buffer.cpp" />
     <ClCompile Include="src\graphics\camera\Camera.cpp" />
     <ClCompile Include="src\graphics\DMRenderer2D.cpp" />
@@ -241,7 +246,7 @@
     <ClCompile Include="src\graphics\layers\Group.cpp" />
     <ClCompile Include="src\graphics\layers\Layer.cpp" />
     <ClCompile Include="src\graphics\layers\Layer2D.cpp" />
-    <ClCompile Include="src\graphics\scene\Scene.cpp" />
+    <ClCompile Include="src\game\scene\Scene.cpp" />
     <ClCompile Include="src\graphics\Shader.cpp" />
     <ClCompile Include="src\graphics\Sprite.cpp" />
     <ClCompile Include="src\graphics\Texture.cpp" />
@@ -250,15 +255,22 @@
     <ClCompile Include="src\math\Vec2.cpp" />
     <ClCompile Include="src\math\Vec3.cpp" />
     <ClCompile Include="src\math\Vec4.cpp" />
+    <ClCompile Include="src\physics\PhysicsMaterial2D.cpp" />
+    <ClCompile Include="src\utils\Time.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DM8.h" />
+    <ClInclude Include="src\entity\component\physics\CollisionBox.h" />
+    <ClInclude Include="src\entity\component\physics\Rigidbody2D.h" />
+    <ClInclude Include="src\math\Rectangle.h" />
     <ClInclude Include="src\entity\component\Component.h" />
     <ClInclude Include="src\entity\component\Components.h" />
+    <ClInclude Include="src\entity\component\EntityBehaviour.h" />
     <ClInclude Include="src\entity\component\SpriteComponent.h" />
     <ClInclude Include="src\entity\component\TransformComponent.h" />
     <ClInclude Include="src\entity\Entity.h" />
     <ClInclude Include="src\game\Game.h" />
+    <ClInclude Include="src\game\Input.h" />
     <ClInclude Include="src\graphics\buffers\Buffer.h" />
     <ClInclude Include="src\graphics\buffers\IndexBuffer.h" />
     <ClInclude Include="src\graphics\buffers\VertexArray.h" />
@@ -269,7 +281,7 @@
     <ClInclude Include="src\graphics\layers\Layer2D.h" />
     <ClInclude Include="src\graphics\Renderable2D.h" />
     <ClInclude Include="src\graphics\Renderer2D.h" />
-    <ClInclude Include="src\graphics\scene\Scene.h" />
+    <ClInclude Include="src\game\scene\Scene.h" />
     <ClInclude Include="src\graphics\Shader.h" />
     <ClInclude Include="src\graphics\Sprite.h" />
     <ClInclude Include="src\graphics\Texture.h" />
@@ -279,8 +291,11 @@
     <ClInclude Include="src\math\Vec2.h" />
     <ClInclude Include="src\math\Vec3.h" />
     <ClInclude Include="src\math\Vec4.h" />
+    <ClInclude Include="src\physics\ForceMode.h" />
+    <ClInclude Include="src\physics\PhysicsMaterial2D.h" />
     <ClInclude Include="src\utils\FileUtils.h" />
     <ClInclude Include="src\utils\maths_func.h" />
+    <ClInclude Include="src\utils\Time.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\shader.frag" />

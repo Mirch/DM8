@@ -2,6 +2,7 @@
 
 #include "Component.h"
 #include "../../math/Mat4.h"
+#include "../../math/Vec2.h"
 
 namespace DM8
 {
@@ -12,9 +13,13 @@ namespace DM8
 			class TransformComponent : public Component
 			{
 			public:
+				math::Vec3 m_Position;
+				math::Vec2 m_Size;
+				float m_Angle;
+			public:
 				math::Mat4 m_Transform;
 			public:
-				TransformComponent(const math::Mat4& transform);
+				TransformComponent(const math::Mat4& transform, Entity* entity);
 
 				static std::string GetStaticName()
 				{
@@ -22,6 +27,9 @@ namespace DM8
 				}
 
 				virtual inline std::string GetName() const override { return GetStaticName(); }
+
+				void Translate(const math::Vec3& vector);
+				void Rotate(float angle);
 
 
 			};

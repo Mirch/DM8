@@ -12,7 +12,7 @@ namespace DM8 {
 		using namespace math;
 
 		class Shader
-		{
+		{ 
 		private:
 			unsigned int m_ID;
 		public:
@@ -35,6 +35,8 @@ namespace DM8 {
 
 			void Enable() const;
 			void Disable() const;
+
+			static Shader* GetDefaultShader();
 
 		};
 

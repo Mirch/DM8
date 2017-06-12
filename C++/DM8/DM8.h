@@ -22,9 +22,14 @@
 
 #include "src/utils/FileUtils.h"
 #include "src/utils/maths_func.h"
+#include "src/utils/Time.h"
 
 #include "src/entity/Entity.h"
 #include "src/entity/component/Components.h"
+
+#include "src/game/Input.h"
+#include "src/game/Game.h"
+
 
 
 

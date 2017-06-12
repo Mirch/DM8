@@ -61,16 +61,37 @@
     <ClCompile Include="src\entity\component\TransformComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\graphics\scene\Scene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\graphics\camera\Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\graphics\layers\Layer2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\game\scene\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="src\game\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\component\EntityBehaviour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\Rectangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\component\physics\CollisionBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\component\physics\Rigidbody2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\physics\PhysicsMaterial2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\Time.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -101,9 +122,17 @@
     <ClInclude Include="src\entity\component\SpriteComponent.h" />
     <ClInclude Include="src\entity\component\TransformComponent.h" />
     <ClInclude Include="src\entity\component\Components.h" />
-    <ClInclude Include="src\game\Game.h" />
-    <ClInclude Include="src\graphics\scene\Scene.h" />
     <ClInclude Include="src\graphics\camera\Camera.h" />
+    <ClInclude Include="src\game\scene\Scene.h" />
+    <ClInclude Include="src\game\Game.h" />
+    <ClInclude Include="src\entity\component\EntityBehaviour.h" />
+    <ClInclude Include="src\game\Input.h" />
+    <ClInclude Include="src\math\Rectangle.h" />
+    <ClInclude Include="src\entity\component\physics\CollisionBox.h" />
+    <ClInclude Include="src\entity\component\physics\Rigidbody2D.h" />
+    <ClInclude Include="src\physics\PhysicsMaterial2D.h" />
+    <ClInclude Include="src\utils\Time.h" />
+    <ClInclude Include="src\physics\ForceMode.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\shader.frag" />

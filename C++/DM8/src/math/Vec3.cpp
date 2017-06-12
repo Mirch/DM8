@@ -91,22 +91,22 @@ namespace DM8 {
 
 		Vec3& Vec3::operator+=(const Vec3& other)
 		{
-			return *this + other;
+			return Add(other);
 		}
 
 		Vec3& Vec3::operator-=(const Vec3& other)
 		{
-			return *this - other;
+			return Subtract(other);
 		}
 
 		Vec3& Vec3::operator*=(const Vec3& other)
 		{
-			return *this * other;
+			return Multiply(other);
 		}
 
 		Vec3& Vec3::operator/=(const Vec3& other)
 		{
-			return *this / other;
+			return Divide(other);
 		}
 
 		std::ostream& operator<<(std::ostream& stream, const Vec3& vector)

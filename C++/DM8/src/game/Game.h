@@ -1,8 +1,9 @@
 #pragma once
 
 #include "../graphics/Window.h"
-#include "../graphics/scene/Scene.h"
-#include "../graphics/layers/Layer2D.h"
+#include "../graphics/layers/Layer.h"
+#include "../utils/Time.h"
+
 
 #include <vector>
 #include <string>
@@ -15,15 +16,17 @@ namespace DM8
 	private:
 		graphics::Window* m_Window;
 		std::vector<graphics::Layer*> m_Layers;
-		graphics::scene::Scene* m_ActiveScene;
+		scene::Scene* m_ActiveScene;
 
 		bool m_Running;
 	public:
 		Game(std::string name, int width, int height);
 		~Game();
 
+		void Start();
+
 		void AddLayer(graphics::Layer* layer);
-		void ActivateScene(graphics::scene::Scene* scene);
+		void ActivateScene(scene::Scene* scene);
 
 		void Run();
 

@@ -52,6 +52,14 @@ namespace DM8 {
 			return result;
 		}
 
+		Mat4 Mat4::RotateAround(float angle, Vec3 point)
+		{
+			Mat4 result = Translate(Vec3(-point.x, -point.y, -point.z));
+			result.Multiply(Rotate(angle));
+			result.Multiply(Translate(point));
+			return result;
+		}
+
 		Mat4 Mat4::Translate(const Vec3& vector)
 		{
 			Mat4 result = Identity();
@@ -59,7 +67,6 @@ namespace DM8 {
 			result.elements[0 + 3 * 4] = vector.x;
 			result.elements[1 + 3 * 4] = vector.y;
 			result.elements[2 + 3 * 4] = vector.z;
-
 			return result;
 		}
 
@@ -67,13 +74,13 @@ namespace DM8 {
 		{
 			Mat4 result = Identity();
 
-			for (int y = 0; y < 4; y++) {
-				for (int x = 0; x < 4; x++) {
+			for (int x = 0; x < 4; x++) {
+				for (int y = 0; y < 4; y++) {
 					float sum = 0.0f;
 					for (int e = 0; e < 4; e++) {
-						sum += elements[x + e * 4] * other.elements[e + y * 4];
+						sum += elements[e + x * 4] * other.elements[y + e * 4];
 					}
-					result.elements[x + y * 4] = sum;
+					result.elements[y + x * 4] = sum;
 				}
 			}
 			return result;
@@ -85,7 +92,7 @@ namespace DM8 {
 				columns[0].x * other.x + columns[1].x * other.y + columns[2].x * other.z + columns[3].x,
 				columns[0].y * other.x + columns[1].y * other.y + columns[2].y * other.z + columns[3].y,
 				columns[0].z * other.x + columns[1].z * other.y + columns[2].z * other.z + columns[3].z
-				);
+			);
 		}
 
 		Vec4 Mat4::Multiply(const Vec4& other) const
@@ -95,7 +102,7 @@ namespace DM8 {
 				columns[0].y * other.x + columns[1].y * other.y + columns[2].y * other.z + columns[3].y * other.w,
 				columns[0].z * other.x + columns[1].z * other.y + columns[2].z * other.z + columns[3].z * other.w,
 				columns[0].w * other.x + columns[1].w * other.y + columns[2].w * other.z + columns[3].w * other.w
-				);
+			);
 		}
 
 		Mat4 operator*(Mat4 left, const Mat4& right)

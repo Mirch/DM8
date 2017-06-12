@@ -7,7 +7,15 @@ namespace DM8
 	{
 		namespace component
 		{
-			
+			Component::Component(Entity* entity)
+				: EntityObject(entity)
+			{
+
+			}
+
+			void Component::Update()
+			{
+			}
 
 		}
 	}

@@ -1,6 +1,8 @@
 #include "Window.h"
 #include <iostream>
 
+#include "../game/Input.h"
+
 namespace DM8 {
 	namespace graphics {
 
@@ -44,9 +46,9 @@ namespace DM8 {
 			glfwSetWindowUserPointer(m_ID, this);
 			glfwMakeContextCurrent(m_ID);
 
-			glfwSetKeyCallback(m_ID, KeyCallback);
-			glfwSetCursorPosCallback(m_ID, CursorPositionCallback);
-			glfwSetMouseButtonCallback(m_ID, MouseButtonCallback);
+			glfwSetKeyCallback(m_ID, Input::KeyCallback);
+			glfwSetCursorPosCallback(m_ID, Input::CursorPositionCallback);
+			glfwSetMouseButtonCallback(m_ID, Input::MouseButtonCallback);
 
 			if (glewInit() != GLEW_OK)
 			{

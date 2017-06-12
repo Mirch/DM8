@@ -14,7 +14,7 @@ namespace DM8
 			public:
 				graphics::Sprite* m_Sprite;
 			public:
-				SpriteComponent(graphics::Sprite * sprite);
+				SpriteComponent(graphics::Sprite * sprite, Entity* entity);
 
 				static std::string GetStaticName()
 				{
